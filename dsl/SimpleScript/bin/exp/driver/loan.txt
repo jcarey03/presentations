@@ -1,0 +1,24 @@
+/*
+   Declarations
+*/ 
+declare loanAmount = 120000
+declare annualPercentageRate = 8.125
+declare loanPeriodYears = 15
+declare numerator, denominator, interestRate, loanPeriodMonths = 0
+
+// compute interest rate
+interestRate = annualPercentageRate / 1200
+
+// compute monthly loan period
+loanPeriodMonths = loanPeriodYears * 12
+
+// compute numerator
+numerator = loanAmount * interestRate * (1 + interestRate)**loanPeriodMonths
+disp numerator
+
+// compute denominator
+denominator = (1 + interestRate)**loanPeriodMonths - 1
+disp denominator
+
+// compute monthly payment
+numerator / denominator

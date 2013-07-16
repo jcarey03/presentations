@@ -1,0 +1,13 @@
+/* 
+  Compute cylinder volume   
+*/
+declare circleArea
+declare height = 10
+declare radius = 1.2
+
+// compute circleArea
+circleArea = PI * radius**2   
+display circleArea
+
+// compute cylinder volume and display
+circleArea * height
